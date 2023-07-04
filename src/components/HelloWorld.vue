@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="test-reference">{{ msg }}</h1>
 
   <p>
     Recommended IDE setup:
@@ -28,7 +28,11 @@ defineProps<{ msg: string }>()
 const count = ref(0)
 </script>
 
-<style scoped>
+<style>
+.test-reference {
+  color: blue;
+}
+
 a {
   color: #42b983;
 }
