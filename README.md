@@ -1,5 +1,14 @@
-# Vue IDE support + TS Plugin + Type-Checking on build
+### `experimentalResolveStyleCssClasses` regression reproduction
 
-> Full TypeScript support template for Vue 3 + Vite power by [Volar](https://github.com/johnsoncodehk/volar)
+**Prerequisites:**
+1. In `tsconfig`
+```ts
+ "vueCompilerOptions": {
+    "experimentalResolveStyleCssClasses": "always",
+  },
+```
+2. `<style>` without `scoped` (see `src/components/HelloWorld.vue` in this repo)
 
-This template is modify from [vite/create-app](https://github.com/vitejs/vite/tree/main/packages/create-app/template-vue-ts).
+**Actual result**: classes have no references even when `experimentalResolveStyleCssClasses` set to `always`
+
+**Expected result**: classes have references
