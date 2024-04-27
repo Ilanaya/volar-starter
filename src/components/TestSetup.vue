@@ -22,7 +22,7 @@ const emit = defineEmits({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .set-default-button {
     margin-bottom: 1px;
 }

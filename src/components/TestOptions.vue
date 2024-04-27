@@ -1,5 +1,6 @@
 <template>
   <h1 class="test-reference"></h1>
+  <h1 class="test-reference1"></h1>
 </template>
 
 <script>
@@ -12,6 +13,10 @@ export default defineComponent({
 
 <style>
 .test-reference {
+  margin: 0cm;
+}
+
+.test-reference1 {
   margin: 0cm;
 }
 </style>
