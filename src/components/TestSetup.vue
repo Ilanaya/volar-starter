@@ -1,6 +1,5 @@
 <template>
-    <ButtonComp class="set-default-button" :type="type" :mode="mode" :disabled="disabled" :text="buttonText"
-        @click="emit('setDefault')" />
+    <ButtonComp class="set-default-button" :mode="mode" :text="buttonText" @click="emit('setDefault')" />
 </template>
 
 <script setup>
@@ -16,18 +15,15 @@ defineProps({
         type: String,
         default: 'base',
     },
-    type: {
-        type: String,
-        default: 'text',
-    },
-    disabled: {
-        type: Boolean,
-        default: false,
-    },
 });
+
 const emit = defineEmits({
     setDefault: null,
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.set-default-button {
+    margin-bottom: 1px;
+}
+</style>
