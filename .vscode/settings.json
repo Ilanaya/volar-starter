@@ -1,6 +1,6 @@
 {
-  // "vue.server.hybridMode": true,
-  "vue.server.hybridMode": false,
+  "vue.server.hybridMode": true,
+  // "vue.server.hybridMode": false,
   "vue.autoInsert.dotValue": true,
-  "vue.codeLens.enabled": true
+  "vue.codeLens.enabled": true,
 }
